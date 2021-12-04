@@ -20,7 +20,7 @@ export class ClimaService {
       console.log(res)
     }  
 
-  this.http.get(`http://api.weatherapi.com/v1/current.json?key=7365c1e5ccbe4239834222859210312&q=${res}&aqi=no&output=json`)
+  this.http.get(`https://api.weatherapi.com/v1/current.json?key=7365c1e5ccbe4239834222859210312&q=${res}&aqi=no&output=json`)
   .subscribe((res:any)=>{
    // console.log(res);
       const keys = Object.values(res);//convierte el object a array
