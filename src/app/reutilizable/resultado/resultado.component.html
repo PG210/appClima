@@ -1,0 +1,41 @@
+<!--carrousel-->
+<div class="container"> 
+  <div class="container-fluid">
+  <div class="card" style="width: 18rem;">
+    <img src="../../../assets/imagen.gif" class="card-img-top" alt="cargando ...">
+    <div class="card-body">
+      <h5 class="card-title">Temperatura °C</h5>
+      <tr *ngFor="let res of respuesta">
+        <td><h3>{{res.temp_c}}</h3></td> 
+        
+      </tr>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--tarjetas-->
+<!--end carrousel-->
+<div class="container">
+<div class="container-fluid bg-info">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Ciudad</th>
+      <th scope="col">Pais</th>
+      <th scope="col">Localidad</th>
+      <th scope="col">Fecha/hora</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let his of respuesta">
+      <td class="table-success">{{his.name}}</td>
+      <td class="table-success">{{his.country}}</td>
+      <td class="table-success">{{his.region}}</td>
+      <td class="table-success">{{his.localtime}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+</div>
